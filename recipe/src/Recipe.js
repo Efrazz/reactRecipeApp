@@ -20,16 +20,15 @@ const Recipe = ({
 				<div className={style.Details}>
 					<p>
 						{" "}
-						<span className={style.detalTitle}>Calories</span>{" "}
-						{calories.toLowerCase()}
+						<span className={style.detalTitle}>Calories</span> {calories}
 					</p>
 					<p>
 						<span className={style.detalTitle}>Diet Labels</span>
-						{dietLabels.toLowerCase()}
+						{dietLabels}
 					</p>
 					<p>
 						<span className={style.detalTitle}>Dish Type</span>
-						{dishType.toLowerCase()}
+						{dishType}
 					</p>
 				</div>
 			</div>

@@ -21,7 +21,7 @@ function App() {
 	//from state
 	const getRecipes = async () => {
 		const response = await fetch(
-			`https://api.edamam.com/search?q=banana&app_id=${APP_ID}&app_key=${APP_key}`
+			`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_key}`
 		);
 		const data = await response.json();
 		setRecipes(data.hits);
@@ -58,11 +58,11 @@ function App() {
 						title={recipe.recipe.label}
 						dietLabels={
 							recipe.recipe.dietLabels.length > 0
-								? `${"-"}` + recipe.recipe.dietLabels
-								: `${"-"}` + "No Data Found"
+								? recipe.recipe.dietLabels
+								: "No Data Found"
 						}
-						dishType={`${"-"}` + recipe.recipe.dishType}
-						calories={`${"-"}` + recipe.recipe.calories.toFixed(2)}
+						dishType={recipe.recipe.dishType}
+						calories={recipe.recipe.calories.toFixed(2)}
 						image={recipe.recipe.image}
 					/>
 				))}
