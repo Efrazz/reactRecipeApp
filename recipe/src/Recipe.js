@@ -1,7 +1,8 @@
 /** @format */
 import React from "react";
+import style from "./recipe.module.css";
 
-export const Recipe = ({
+const Recipe = ({
 	title,
 	calories,
 	image,
@@ -10,17 +11,28 @@ export const Recipe = ({
 	ingredients,
 }) => {
 	return (
-		<div>
-			<img src={image} alt='' />
-			<h1>{title}</h1>
-			<p>{calories}</p>
-			<p>{dietLabels}</p>
-			<p>{dishType}</p>
-			<ol>
-				{ingredients.map((ingredient) => (
-					<li>{ingredient.text}</li>
-				))}
-			</ol>
+		<div className={style.Recipe}>
+			<img className={style.Image} src={image} alt='' />
+			<div className={style.Text}>
+				<div className={style.Title}>
+					<h1>{title}</h1>
+				</div>
+				<div className={style.Details}>
+					<p>
+						{" "}
+						<span className={style.detalTitle}>Calories</span>{" "}
+						{calories.toLowerCase()}
+					</p>
+					<p>
+						<span className={style.detalTitle}>Diet Labels</span>
+						{dietLabels.toLowerCase()}
+					</p>
+					<p>
+						<span className={style.detalTitle}>Dish Type</span>
+						{dishType.toLowerCase()}
+					</p>
+				</div>
+			</div>
 		</div>
 	);
 };
