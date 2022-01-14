@@ -1,6 +1,7 @@
 /** @format */
 import React from "react";
 import style from "./recipe.module.css";
+import { GiRiceCooker } from "react-icons/gi";
 
 const Recipe = ({
 	title,
@@ -8,7 +9,7 @@ const Recipe = ({
 	image,
 	dishType,
 	dietLabels,
-	ingredients,
+
 	cusinType,
 	viewBtn,
 }) => {
@@ -37,7 +38,10 @@ const Recipe = ({
 						{dishType}
 					</p>
 					<a className={style.viewbtn} href={viewBtn} target='_blank'>
-						View Instructions
+						Let's Cook!{" "}
+						<div className={style.cookBtn}>
+							<GiRiceCooker />
+						</div>
 					</a>
 				</div>
 			</div>

@@ -1,6 +1,8 @@
 /** @format */
 
 import React, { useEffect, useState } from "react";
+import SearchBtnSound from "../src/assets/Clicking-sound-effect.mp3";
+import { FaSearch } from "react-icons/fa";
 
 import Recipe from "./Recipe";
 import sass from "./sass/Main.scss";
@@ -17,10 +19,17 @@ function App() {
 		getRecipes();
 	}, [query]);
 
+	let BtnAudio = new Audio(SearchBtnSound);
+	BtnAudio.volume = 0.4;
+
+	const playSound = () => {
+		BtnAudio.play();
+	};
+
 	//from state
 	const getRecipes = async () => {
 		const response = await fetch(
-			`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_key}&from=0&to=42`
+			`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_key}&from=0&to=21`
 		);
 		const data = await response.json();
 		setRecipes(data.hits);
@@ -34,22 +43,22 @@ function App() {
 		e.preventDefault();
 		setQuery(search);
 		setSearch("");
+		playSound();
 	};
 
 	return (
 		<div className='App'>
 			<form onSubmit={getSearch} className='Search-form'>
-				<div>
-					<div className='ResultsT'>Search for Recipes</div>
-
+				<div className='Search-formWrap'>
 					<input
+						placeholder='Search for Recipes...'
 						type='text'
 						className='search-bar'
 						value={search}
 						onChange={updateSearch}
 					/>
 					<button className='search-button' type='submit'>
-						Search
+						<FaSearch />
 					</button>
 				</div>
 				<div className='ResultsText'>Your Search Results:</div>
