@@ -9,6 +9,8 @@ const Recipe = ({
 	dishType,
 	dietLabels,
 	ingredients,
+	cusinType,
+	viewBtn,
 }) => {
 	return (
 		<div className={style.Recipe}>
@@ -18,6 +20,10 @@ const Recipe = ({
 					<h1>{title}</h1>
 				</div>
 				<div className={style.Details}>
+					<p>
+						{" "}
+						<span className={style.detalTitle}>Cuisine Type</span> {cusinType}
+					</p>
 					<p>
 						{" "}
 						<span className={style.detalTitle}>Calories</span> {calories}
@@ -30,6 +36,9 @@ const Recipe = ({
 						<span className={style.detalTitle}>Dish Type</span>
 						{dishType}
 					</p>
+					<a className={style.viewbtn} href={viewBtn} target='_blank'>
+						View Instructions
+					</a>
 				</div>
 			</div>
 		</div>

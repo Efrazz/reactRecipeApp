@@ -26,11 +26,12 @@
 }
 .Title {
 	color: rgb(250, 245, 245);
-	margin-left: 20px;
-	max-width: 21rem;
-	white-space: nowrap;
-	overflow: hidden;
+	margin: 0 0 10px 20px;
+	max-width: 22rem;
+	white-space: wrap;
+	font-size: 12px;
 	text-overflow: ellipsis;
+	height: 80px;
 }
 .Details {
 	color: rgb(163, 172, 164);
@@ -43,9 +44,25 @@
 }
 .Details p {
 	margin: 0 0 15px;
+	max-height: 10rem;
 }
 .detalTitle {
 	font-weight: bold;
 	color: rgb(237, 236, 241);
 	margin-right: 15px;
+	font-style: italic;
+}
+
+.viewbtn {
+	text-decoration: none;
+	text-align: center;
+	width: 16rem;
+	padding: 10px 0;
+	background-color: #de7777;
+	color: whitesmoke;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-top: 20px;
+	border-radius: 4px;
+	align-self: flex-start;
 }
