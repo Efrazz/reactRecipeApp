@@ -29,7 +29,7 @@ function App() {
 	//from state
 	const getRecipes = async () => {
 		const response = await fetch(
-			`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_key}&from=0&to=21`
+			`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_key}&from=0&to=41`
 		);
 		const data = await response.json();
 		setRecipes(data.hits);
