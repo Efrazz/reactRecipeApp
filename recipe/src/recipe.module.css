@@ -1,6 +1,7 @@
 /** @format */
 
 .Recipe {
+	position: relative;
 	display: inline-block;
 	overflow: hidden;
 	width: 130%;
@@ -41,14 +42,45 @@
 	align-items: flex-start;
 	justify-content: space-between;
 }
-.Title {
-	color: rgb(250, 245, 245);
+.Title,
+.bgColor {
+	overflow: visible;
+	transform: rotate(-45deg);
+	/* padding: 30rem 10rem 20px 10rem; */
+	top: 3rem;
+	left: -1rem;
+
+	color: whitesmoke;
+	word-wrap: break-word;
+	width: 12rem;
+	z-index: 111;
+	position: absolute;
+	color: rgb(252, 246, 246);
 	margin: 0 0 10px 20px;
 	max-width: 22rem;
 	white-space: wrap;
-	font-size: 12px;
+	font-size: 10px;
 	text-overflow: ellipsis;
 	height: 80px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+.bgColor {
+	top: -27rem;
+	left: -23rem;
+	height: 10rem;
+	width: 10rem;
+	padding: 30rem 10rem 20px 10rem;
+	background-image: radial-gradient(
+		circle,
+		#d2a320,
+		#da8c00,
+		#e17100,
+		#e74f00,
+		#eb1212
+	);
 }
 .Details {
 	color: rgb(163, 172, 164);
@@ -75,7 +107,15 @@
 	text-align: center;
 	width: 16rem;
 	padding: 7px 0;
-	background-image: linear-gradient(to right, #de7777 2%, #05050500 100%);
+	background-image: linear-gradient(to right, #eb1212 2%, #e7510000 70%);
+	/* background-image: radial-gradient(
+		circle,
+		#d2a320,
+		#da8c00,
+		#e17000,
+		#e75100,
+		#eb1212
+	); */
 	color: whitesmoke;
 	font-size: 1.6rem;
 	font-weight: 600;
@@ -93,5 +133,5 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: -4px 0 0 10px;
+	margin: -4px 0 0 10.1px;
 }

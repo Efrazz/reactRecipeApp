@@ -16,10 +16,11 @@ const Recipe = ({
 	return (
 		<div className={style.Recipe}>
 			<img className={style.Image} src={image} alt='' />
+			<div className={style.bgColor}></div>
+			<div className={style.Title}>
+				<h1>{title}</h1>
+			</div>
 			<div className={style.Text}>
-				<div className={style.Title}>
-					<h1>{title}</h1>
-				</div>
 				<div className={style.Details}>
 					<p>
 						{" "}
