@@ -6,12 +6,12 @@
 	overflow: hidden;
 	width: 130%;
 	background-color: rgb(33, 34, 38);
-	border-radius: 30px;
+	border-radius: 25px;
 	color: rgb(234, 227, 240);
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	-o-border-radius: 30px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
 }
 
 .Image {
