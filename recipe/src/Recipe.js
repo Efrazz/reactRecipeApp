@@ -9,7 +9,7 @@ const Recipe = ({
 	image,
 	dishType,
 	dietLabels,
-
+	source,
 	cusinType,
 	viewBtn,
 }) => {
@@ -37,6 +37,10 @@ const Recipe = ({
 					<p>
 						<span className={style.detalTitle}>Dish Type</span>
 						{dishType}
+					</p>
+					<p>
+						<span className={style.detalTitle}>Source</span>
+						{source}
 					</p>
 					<a className={style.viewbtn} href={viewBtn} target='_blank'>
 						Let's Cook!{" "}

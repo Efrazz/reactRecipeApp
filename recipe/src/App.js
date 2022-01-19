@@ -33,7 +33,7 @@ function App() {
 		);
 		const data = await response.json();
 		setRecipes(data.hits);
-		console.log(data);
+		/* console.log(data); */
 	};
 
 	const updateSearch = (e) => {
@@ -82,6 +82,7 @@ function App() {
 						calories={recipe.recipe.calories.toFixed(2)}
 						image={recipe.recipe.image}
 						viewBtn={recipe.recipe.url}
+						source={recipe.recipe.source}
 					/>
 				))}
 			</div>
