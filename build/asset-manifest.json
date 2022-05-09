@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.199e79a2.css",
+    "main.js": "/static/js/main.d0c348a9.js",
+    "static/js/787.daa3fa54.chunk.js": "/static/js/787.daa3fa54.chunk.js",
+    "static/media/Clicking-sound-effect.mp3": "/static/media/Clicking-sound-effect.31aeb301418cf49ac91e.mp3",
+    "index.html": "/index.html",
+    "main.199e79a2.css.map": "/static/css/main.199e79a2.css.map",
+    "main.d0c348a9.js.map": "/static/js/main.d0c348a9.js.map",
+    "787.daa3fa54.chunk.js.map": "/static/js/787.daa3fa54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.199e79a2.css",
+    "static/js/main.d0c348a9.js"
+  ]
+}
