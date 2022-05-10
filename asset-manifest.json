@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reactRecipeApp/static/css/main.06b1cd7a.css",
+    "main.js": "/reactRecipeApp/static/js/main.caafbafc.js",
+    "static/js/787.daa3fa54.chunk.js": "/reactRecipeApp/static/js/787.daa3fa54.chunk.js",
+    "static/media/Clicking-sound-effect.mp3": "/reactRecipeApp/static/media/Clicking-sound-effect.31aeb301418cf49ac91e.mp3",
+    "index.html": "/reactRecipeApp/index.html",
+    "main.06b1cd7a.css.map": "/reactRecipeApp/static/css/main.06b1cd7a.css.map",
+    "main.caafbafc.js.map": "/reactRecipeApp/static/js/main.caafbafc.js.map",
+    "787.daa3fa54.chunk.js.map": "/reactRecipeApp/static/js/787.daa3fa54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b1cd7a.css",
+    "static/js/main.caafbafc.js"
+  ]
+}
